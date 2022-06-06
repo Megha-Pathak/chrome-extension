@@ -1,0 +1,35 @@
+{
+  "name": "Duckling",
+  "description": "Digital Companion for Developers",
+  "version": "2.0",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "action": {
+    "default_title": "Ducky Quack",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "resources/img/ducky48.png",
+      "128": "resources/img/ducky128.png"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "MacCtrl+Shift+Y"
+      },
+      "description": "Opens Ducky"
+    }
+  },
+  "icons": {
+    "48": "resources/img/ducky48.png",
+    "128": "resources/img/ducky128.png"
+  }
+}
